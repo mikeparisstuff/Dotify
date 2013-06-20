@@ -1,7 +1,7 @@
 Dotify
 ======
 
-It's all in the name. Dotify pictures of your friends, your enemies, and especially your cat.
+It's all in the name. Dotify pictures of your friends, your family, and especially your cat.
 
 Dotify is a pretty neat image manipulation tool that I built entirely with Java and Swing.
 In a nutshell it uses a variation of Dijkstra's algorithm and leverages both the darkness and the
