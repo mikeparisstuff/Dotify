@@ -12,20 +12,20 @@ in the image has been visited.
 
 Below are a few of my favorite dotified images.
 
-![Barcelona Lion](https://github.com/mlp5ab/Dotify/examples/barcalion.jpg)
+![Barcelona Lion](https://github.com/mlp5ab/Dotify/tree/master/examples/barcalion.jpg)
 
-![Suits](https://github.com/mlp5ab/Dotify/examples/class.png)
+![Suits](https://github.com/mlp5ab/Dotify/tree/master/examples/class.png)
 
-![Colloseum](https://github.com/mlp5ab/Dotify/examples/colo.png)
+![Colloseum](https://github.com/mlp5ab/Dotify/tree/master/examples/colo.png)
 
-![Guitar](https://github.com/mlp5ab/Dotify/examples/guitar.tiff)
+![Guitar](https://github.com/mlp5ab/Dotify/tree/master/examples/guitar.tiff)
 
-![Tea](https://github.com/mlp5ab/Dotify/examples/jason.tiff)
+![Tea](https://github.com/mlp5ab/Dotify/tree/master/examples/jason.tiff)
 
-![Glasses](https://github.com/mlp5ab/Dotify/examples/lucas_looney.png)
+![Glasses](https://github.com/mlp5ab/Dotify/tree/master/examples/lucas_looney.png)
 
-![Spanish Chica](https://github.com/mlp5ab/Dotify/examples/maria.tiff)
+![Spanish Chica](https://github.com/mlp5ab/Dotify/tree/master/examples/maria.tiff)
 
-![Token Kitty](https://github.com/mlp5ab/Dotify/examples/mj.tiff)
+![Token Kitty](https://github.com/mlp5ab/Dotify/tree/master/examples/mj.tiff)
 
-![Alma Mater](https://github.com/mlp5ab/Dotify/examples/rotunda.jpg)
+![Alma Mater](https://github.com/mlp5ab/Dotify/tree/master/examples/rotunda.jpg)
