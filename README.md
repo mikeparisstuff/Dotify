@@ -10,7 +10,10 @@ length with a threshold and when this threshold is surpassed, it places a stippl
 time a stipple is placed, the interior path length is set to zero and the process repeats until every pixel
 in the image has been visited.
 
-Below are a few of my favorite dotified images.
+You've definitely got to see it to believe it so here are few of my family, friends, and pets dotified.
+
+Check It Out
+============
 
 ![Barcelona Lion](examples/barcalion.jpg)
 
