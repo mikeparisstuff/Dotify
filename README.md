@@ -24,7 +24,7 @@ Check It Out
 
 ![Suits](examples/class.png)
 
-![Colloseum](examples/colo.png)
+![Colloseum](examples/colo.jpeg)
 
 ![Guitar](examples/guitar.png)
 
