@@ -18,14 +18,14 @@ Below are a few of my favorite dotified images.
 
 ![Colloseum](examples/colo.png)
 
-![Guitar](examples/guitar.tiff)
+![Guitar](examples/guitar.png)
 
-![Tea](examples/jason.tiff)
+![Tea](examples/jason.png)
 
 ![Glasses](examples/lucas_looney.png)
 
-![Spanish Chica](examples/maria.tiff)
+![Spanish Chica](examples/maria.png)
 
-![Token Kitty](examples/mj.tiff)
+![Token Kitty](examples/mj.png)
 
 ![Alma Mater](examples/rotunda.jpg)
