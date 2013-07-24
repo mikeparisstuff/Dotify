@@ -57,11 +57,6 @@ public class Vertex {
 	public int hashCode() {
 		int result = 1;
 		result = 31*result + position.hashCode();
-//		String hash = position;
-//		while( hash.length() > 1) {
-//			result = 31 * result + hash.charAt(0);
-//			hash = hash.substring(1);
-//		}
 		return result;
 	}
 	

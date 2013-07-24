@@ -66,9 +66,7 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 					Dotify frame = new Dotify();
 					frame.setLocationRelativeTo(null);
 					frame.setLocation(0, 0);
-//					frame.setSize(800, 800);
 					frame.pack();
-//					System.out.println("Width: " + frame.getWidth() + ", Height: " + frame.getHeight());
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -83,7 +81,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 	public Dotify() {
 		setTitle("Dotify");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		setBounds(0, 0, 1000, 1000);
 
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -111,15 +108,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 		menuBar.add(lblNumberOfDots);
 		comboBox = new JComboBox(numDots);
 		menuBar.add(comboBox);
-		
-//		chckbxConnectTheDots = new JCheckBox("Connect the Dots");
-//		menuBar.add(chckbxConnectTheDots);
-//		chckbxConnectTheDots.addActionListener(new ActionListener() {
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				toggleNumDots();
-//			}
-//		});
 		
 		chckbxColor = new JCheckBox("Color");
 		menuBar.add(chckbxColor);
@@ -151,7 +139,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 				//Create the Lattice and draw it to the jPanel..
 				if( gray != null ) {
 					//Run the application
-//					dotify();
 					
 					pMonitor = new ProgressMonitor(Dotify.this, 
 							"Do you know how many pixels are in this image?",
@@ -186,7 +173,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 	 */
 	public void dotify() {
 		Lattice8 graph = new Lattice8(gray);
-//		System.out.println(graph.getDarknessSum());
 		iw = graph.getWidth();
 		ih = graph.getHeight();
 
@@ -216,27 +202,22 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 			num *= 3;
 		else if( item.equals("A lot")) 
 			num *= 1;
-//		System.out.println(num);
 		
 		int dSize = 1;
 		if( comboBoxSize.getSelectedItem().equals("small")) {
-//			dSize = 1;
 			panel.setDotSize(1);
 		}
 		else if( comboBoxSize.getSelectedItem().equals("medium")) {
-//			dSize = 2;
 			panel.setDotSize(2);
 		}
 		else if( comboBoxSize.getSelectedItem().equals("large")){
-//			dSize = 3;
 			panel.setDotSize(3);
 		}
 
 		//Dijkstra Difficulties
 		Dijkstra dijkstra = new Dijkstra(gray.getWidth(), gray.getHeight(), num/dark, panel, chckbxWatchLive.isSelected());
 		Vertex[][] lattice = graph.getGraph();
-//		long ops = (lattice.length*lattice[1].length)*(lattice.length*lattice[1].length);
-//		System.out.println("Running " + ops + " operations.... Just chill");
+
 		dijkstra.DijkExecute(lattice[0][0]);
 		if(! chckbxWatchLive.isSelected() ) {
 			stipples = dijkstra.getStipples();
@@ -296,7 +277,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 		catch(NullPointerException e) {
 			promptForValidImage();
 		}
-//		gray = new BufferedImage(size.width, size.height, BufferedImage.TYPE_BYTE_GRAY);
 		if( in != null) {
 			gray = new BufferedImage(in.getWidth(), in.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
 		}
@@ -309,7 +289,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 		 */
 		if( gray != null ) {
 			Graphics g = gray.getGraphics();
-	//		g.drawImage(image, 0, 0, null);
 			g.drawImage(in, 0,0, null);
 	
 			//Release resources
@@ -350,8 +329,6 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 	 */
 	public void resize()
 	{
-//		this.setBounds(0, 0, w, h);
-//		this.repaint();
 		this.pack();
 		this.repaint();
 		panel.reDraw();
@@ -369,6 +346,7 @@ public class Dotify extends JFrame implements Dijkstra.StippleListener, Canvas.c
 
 	/*
 	 * Code here that will handle the drawing of the dots in live time
+	 * OBSOLETE
 	 */
 	public void paintStipple(Vertex v) {
 //		panel.paintStipple(v);

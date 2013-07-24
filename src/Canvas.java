@@ -28,15 +28,9 @@ public class Canvas extends JPanel implements Dijkstra.StippleListener{
         stip = null;
         prefX = 500;
         prefY = 500;
+        
         //By Default
         dotSize = 1;
-//        File mFile = new File("icn_dotify.png");
-//        try {
-//        	image = ImageIO.read(mFile);
-//        }
-//        catch( IOException e) {
-//        	e.printStackTrace();
-//        }
         try {
         	cCallback = (canvasListener)application;
         } catch( ClassCastException e) {
@@ -75,7 +69,6 @@ public class Canvas extends JPanel implements Dijkstra.StippleListener{
 	}
 	
 	public void paintStipple(Vertex v) {
-//		this.stip = v;
 		stipples.add(v);
 		image = null;
 		repaint();
@@ -102,7 +95,6 @@ public class Canvas extends JPanel implements Dijkstra.StippleListener{
         super.paintComponent(g);       
 
         // Draw Text
-//        g.drawString("This is my custom Panel!",10,20);
         Graphics2D graphics = (Graphics2D)g;
         if( image != null ) {
         	graphics.drawImage(image, 0, 0, null);
@@ -114,9 +106,6 @@ public class Canvas extends JPanel implements Dijkstra.StippleListener{
         	firstTime = false;
         }
         
-//        if( stip != null ) {
-//        	graphics.fillRect(stip.x/2, stip.y/2, 1, 1);
-//        }
         
         try {
 	        Color c; 

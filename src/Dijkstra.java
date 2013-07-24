@@ -49,10 +49,10 @@ public class Dijkstra {
 		int mapSize = (int)(iw*ih*1.5);
 		imageWidth = iw;
 		imageHeight = ih;
-//		unknowns = new HashSet<Vertex>(iw*ih);
+
 		knowns = new HashSet<Vertex>(mapSize);
 		threshold = thresh;
-//		distance = new HashMap<Vertex, Double>(mapSize);
+
 		points = new ArrayList<Vertex>();
 		this.isLive = isLive;
 		try {
@@ -107,35 +107,25 @@ public class Dijkstra {
 		
 		uHeap.add(s);
 		gHeap.add(s);
-//		unknowns.add(s);
 		
 		//While there are unknown vertices
 		while( uHeap.size() > 0 && gHeap.size() > 0 ) {    //unknowns.size() > 0 ) {
-//			System.out.println("Execute Called");
-//			v = getMin(unknowns);
-//			System.out.println("Min: " + v.x + "," + v.y);
+
 			v = uHeap.peek();
 			knowns.add(v);
 			
-			
-//			unknowns.remove(v);
 			uHeap.remove();
 			gHeap.remove();
 			
 			//For each adjacent node
 			for( Vertex w : getAdjacent(v) ) {
-//				System.out.println("Going through adjacents");
 				if( ! isKnown(w) ) {
-//					System.out.println("Current v: " + getCurrDist(v) + ", Current w: " + getCurrDist(w));
 					if( getCurrDist(v) + getEdgeImportance(v,w) < getCurrDist(w)) {
 						double newdist = getCurrDist(v) + getEdgeImportance(v,w);
 						setCurrDist(w, newdist);
 						uHeap.add(w);
 						gHeap.add(w);
-//						unknowns.add(w);
-//						System.out.println("Adding to unknown");
 						if( newdist >= threshold ) {
-//							System.out.println("Adding Stipple");
 							addNewStipple();
 						}
 					}
@@ -229,18 +219,6 @@ public class Dijkstra {
 	 */
 	private Vertex findMaxGradient() {
 		return gHeap.peek();
-//		Vertex max = null;
-//		for( Vertex v : unknowns ) {
-//			if( max == null ) {
-//				max = v;
-//			}
-//			else {
-//				if ( v.getGradient() > max.getGradient() ) {
-//					max = v;
-//				}
-//			}
-//		}
-//		return max;
 	}
 	
 	/**
@@ -298,13 +276,6 @@ public class Dijkstra {
 	 */
 	private double getCurrDist(Vertex v) {
 		return v.getDistance();
-//		Double current = distance.get(v);
-//		if( current == null ) {
-//			return Double.MAX_VALUE;
-//		}
-//		else {
-//			return current;
-//		}
 	}
 	
 	/**
