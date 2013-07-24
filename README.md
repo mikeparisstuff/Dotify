@@ -22,6 +22,8 @@ Check It Out
 
 ![Barcelona Lion](examples/barcalion.jpg)
 
+![AlbumCover](examples/album_cover.png)
+
 ![Suits](examples/class.png)
 
 ![Colloseum](examples/colo.jpg)
