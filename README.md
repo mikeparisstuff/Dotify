@@ -13,9 +13,9 @@ in the image has been visited.
 At first, Dotify would just do its magic and spit out an image a few seconds later leaving me to wonder how it actually
 drew the thing. This was unacceptable. To fix this, I added
 background threads allowing Dotify to think and draw at the same time. If you are interested in adding features
-or just playing around with some of your own photos fork or clone it and watch it live.
+or just playing around with some of your own photos fork, clone, or download the executable jar to try it yourself.
 
-You've definitely got to see it to believe it so here are few of my family, friends, and pets dotified.
+You've definitely got to see it to believe it so here are few dotified friends, family, and pets.
 
 Check It Out
 ============
