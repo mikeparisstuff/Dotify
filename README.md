@@ -10,9 +10,7 @@ length with a threshold and when this threshold is surpassed, it places a stippl
 time a stipple is placed, the interior path length is set to zero and the process repeats until every pixel
 in the image has been visited.
 
-At first, Dotify would just do its magic and spit out an image a few seconds later leaving me to wonder how it actually
-drew the thing. This was unacceptable. To fix this, I added
-background threads allowing Dotify to think and draw at the same time. If you are interested in adding features
+Its pretty cool to watch dotify draw your pictures live (although it may take a hot minute) so if you are interested in adding features
 or just playing around with some of your own photos fork, clone, or download the executable jar to try it yourself.
 
 You've definitely got to see it to believe it so here are few dotified friends, family, and pets.
